@@ -1,29 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My WebOS</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./images/avatar.png" />
+  <title>Shreya | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="nav">
-        <p id="mainopen">Shreya ♡</p>
-        <p>Always Learning (੭˃ᴗ˂)੭</p>
-        <p id="timeElement"></p>
-    </div>
-    <div id = "main">
-        <p id="main_header"></p>
-        <p id="mainclose">Close</p>
-        <div class="image"><img src="download.jpeg" style="width: 74px; height: 74px; object-fit: cover;"></div>
-        <h1>Hello World!</h1>
-        <hr>
+
+  <!-- Sticky navbar -->
+  <section class="navbar">
+  <header class="container navbar-header">
+    <h1 class="logo">PLAYER1</h1>
+    <nav aria-label="primary">
+      <ul>
+        <li class="nav-item"><a href="#home">HOME</a></li>
+        <li class="nav-item"><a href="#about">ABOUT</a></li>
+        <li class="nav-item"><a href="#projects">PROJECTS</a></li>
+        <li class="nav-item"><a href="#skills">SKILLS</a></li>
+        <li class="nav-item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+</section>
+
+
+  <!-- Hero -->
+  <section class="hero container" id="home">
+    <div class="intro">
+      <span class="status">ONLINE</span>
+
+      <h2>HI, I’M <span class="highlight">SHREYA SRIVASTAVA</span></h2>
+      <h3>B.Tech Student</h3>
+
+      <div class="message-box">
         <p>
-            <dfn>This is I</dfn>, a lil weird and smart all at once.<br/> 
-            My brain's a <i>cozy</i> little workshop, always tinkering with fun new things. <i>Come on in!</i>
+          Building epic experiences with code and creativity.<br />
+          Currently mastering the art of full-stack development.<span class="message-box-cursor">|</span>
         </p>
+      </div>
+
+      <div class="buttons">
+        <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+        <a href="#contact" class="btn btn-secondary">CONTACT ME</a>
+      </div>
+
+      <div class="stats-row">
+        <div class="card-primary">LEVEL <span>2</span></div>
+        <div class="card-secondary">MAJOR • CSE-AI</div>
+      </div>
+    </div>
+    
+    <div class="terminal">
+      <div class="badge-new">NEW!</div>
+
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">PLAYER TERMINAL</span>
+      </div>
+
+      <div class="terminal-body">
+        <div class="avatar">
+          <img src="./images/avatar.png" alt="avatar" height="120" width="120">
+        </div>
+        <h4 class="player-name">Shreya Srivastava</h4>
+      </div>
+        <div class="stat-row">
+    <span class="stat-label">HP</span>
+    <div class="bar"><span style="width:83%" class="hp"></span></div>
+    <span class="stat-value">83/100</span>
+  </div>
+
+  <div class="stat-row">
+    <span class="stat-label">MP</span>
+    <div class="bar"><span style="width:96%" class="mp"></span></div>
+    <span class="stat-value">96/100</span>
+  </div>
+
+  <div class="stat-row">
+    <span class="stat-label">EXP</span>
+    <div class="bar"><span style="width:70%" class="xp"></span></div>
+    <span class="stat-value">70/100</span>
+  </div>
+
+        <p class="class">Class: B.Tech Student</p>
+        <p class="status-ready">STATUS: READY</p>
+    </div>
+  </section>
+
+   <!-- About -->
+<section id="about" class="about container">
+  <div class="dashboard-container">
+    
+    <!-- Left Panel -->
+    <div class="player-profile-panel">
+      <div class="player-profile-header">
+        <h3>PLAYER PROFILE</h3>
+      </div>
+      <div class="player-avatar">
+        <div class="avatar-frame">
+          <img src="./images/about.jpg" alt="Shreya Avatar">
+        </div>
+      </div>
+      
+      <div class="player-info">
+        <h2 class="player-about-name">SHREYA SRIVASTAVA</h2>
+      </div>
+
+      <!-- Personal Message -->
+      <div class="personal-message">
+        <div class="message-header"></div>
+        <div class="message-content">
+          <p>Hey!</p>
+          <p>I’m a sophomore in B.Tech – Computer Science & AI. I love building things with code, whether it’s a sleek web app, a small AI model, or a fun interactive experience.</p>
+          <p>I enjoy solving problems creatively, learning from projects and hackathons, and collaborating with others who are just as passionate about technology.</p>
+          <p>When I’m not coding, I’m exploring new tools, experimenting with UI/UX designs, or just vibing to some lo-fi beats while planning my next project.</p>
+        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Right Panel -->
+    <div class="stats-panel"> 
+      <!-- Player Stats -->
+      <div class="player-stats-panel">
+        <div class="panel-header green">
+          <h3>PLAYER STATS</h3>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card cyan">
+            <div class="stat-icon"></div>
+            <div class="stat-label">LANGUAGES</div>
+            <div class="stat-value">5</div>
+          </div>
+          <div class="stat-card gray">
+            <div class="stat-icon">🛠️</div>
+            <div class="stat-label">TOOLS</div>
+            <div class="stat-value">8+</div>
+          </div>
+          <div class="stat-card yellow">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-label">GPA</div>
+            <div class="stat-value">8.5/10</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-icon">📁</div>
+            <div class="stat-label">PROJECTS</div>
+            <div class="stat-value">12</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement Log -->
+      <div class="achievement-panel">
+        <div class="panel-header">
+          <h3>ACHIEVEMENT LOG</h3>
+        </div>
+        
+        <div class="achievement-tabs">
+          <button class="tab-btn active" data-tab="edu">🎓 EDU</button>
+          <button class="tab-btn" data-tab="work">💼 WORK</button>
+          <button class="tab-btn" data-tab="extra">⭐ EXTRA</button>
+        </div>
+
+        <div class="achievement-content">
+          <div class="tab-content active" id="edu">
+            <div class="achievement-item">
+              <div class="achievement-title">B.Tech — Computer Science Engineering</div>
+              <div class="achievement-subtitle">IGDTUW</div>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-title">High School Graduate</div>
+              <div class="achievement-subtitle">95.8% — Academic Excellence</div>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-title">Expected Graduation</div>
+              <div class="achievement-subtitle">2028</div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="work">
+            <div class="achievement-item">
+              <div class="achievement-title">Frontend Development Intern</div>
+              <div class="achievement-subtitle">Currently Seeking</div>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-title">Freelance Projects</div>
+              <div class="achievement-subtitle">Web Development & Design</div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="extra">
+            <div class="achievement-item">
+              <div class="achievement-title">IEEE Club Member</div>
+              <div class="achievement-subtitle">Active Participant</div>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-title">Hackathon Warrior</div>
+              <div class="achievement-subtitle">Multiple Participations</div>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-title">Open Source Contributor</div>
+              <div class="achievement-subtitle">Growing Portfolio</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
